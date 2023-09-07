@@ -1,0 +1,89 @@
+body {
+  width: 70%;
+  margin: 10px auto;
+  background-color: rgb(0, 0, 0);
+  padding-bottom: 100px;
+}
+
+.header-section {
+  background-color: #009270;
+}
+
+
+.header-links ul li button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 910px) {
+  .header-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header-section, .main-content{
+    border-radius: 10px;
+  }
+}
+
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-links ul{
+    padding: 0;
+}
+
+.header-links ul li {
+  list-style: none;
+  font-size: 15px;
+}
+
+.header-links ul div{
+    padding: 15px 0px;
+}
+
+.header-links ul div:hover {
+  background-color: rgb(61, 60, 60);
+}
+
+.main-content {
+  background-color: rgb(34, 35, 39);
+  color: white;
+  padding: 10px;
+  margin-top: 8px;
+}
+
+.question-topic {
+  background-color: rgb(19, 19, 20);
+  margin: 4px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.question-topic h2{
+    margin: 2px;
+}
+
+.answer, .explain{
+  background-color: rgb(27, 27, 27);
+  padding: 5px;
+  margin: 4px;
+  border-radius: 10px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Serif", serif;
+}
+
+img{
+    border-radius: 10px;
+}
