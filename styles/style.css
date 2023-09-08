@@ -38,6 +38,10 @@ body {
   .header-links ul li button:hover{
     font-size: 20px;
   }
+
+  .js-search{
+    width: 50%;
+  }
 }
 
 .header-buttons {
