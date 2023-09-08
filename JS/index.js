@@ -54,4 +54,9 @@ document.addEventListener("DOMContentLoaded", () => {
   queryString.addEventListener("keypress", () => {
     filterByInput(queryString.value);
   });
+
+  document.querySelector('.js-search-button')
+    .addEventListener('click', ()=>{
+      filterByInput(queryString.value);
+    })
 });
