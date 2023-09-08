@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     });
     mainContentDiv.innerHTML = mainContentHTML;
-    mainContentHTML = '';
+    mainContentHTML = "";
   }
   setHTML(introductionToQbasic);
 
@@ -29,8 +29,29 @@ document.addEventListener("DOMContentLoaded", () => {
       setHTML(introductionToQbasic);
     });
 
-  document.querySelector('.qbasicStatement')
-    .addEventListener('click', ()=>{
-        setHTML(qbasicStatements);
-    }); 
+  document.querySelector(".qbasicStatement").addEventListener("click", () => {
+    setHTML(qbasicStatements);
+  });
+
+  /*Search Functionality */
+  function filterByInput(queryString) {
+    let filterData = [];
+    introductionToQbasic.forEach((topic) => {
+      if (topic.qns.toLowerCase().includes(queryString.toLowerCase())) {
+        filterData.push(topic);
+      }
+    });
+
+    qbasicStatements.forEach((topic) => {
+      if (topic.qns.toLowerCase().includes(queryString.toLowerCase())) {
+        filterData.push(topic);
+      }
+    });
+    setHTML(filterData);
+  }
+
+  const queryString = document.querySelector(".js-search");
+  queryString.addEventListener("keypress", () => {
+    filterByInput(queryString.value);
+  });
 });
