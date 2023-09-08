@@ -30,6 +30,9 @@ body {
   .header-section, .main-content{
     border-radius: 10px;
   }
+  body{
+    width: 95%;
+  }
 }
 
 
