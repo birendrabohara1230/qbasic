@@ -13,9 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="answer">
           <p>${element.ans}</p>
         </div>
-        <div class="explain">
-            <p>${element.exp}</p>
-        </div>
+        ${
+          element.exp
+            ? `<div class="explain">
+        <p>${element.exp}</p>
+    </div>`
+            : ""
+        }
         `;
     });
     mainContentDiv.innerHTML = mainContentHTML;
@@ -55,8 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     filterByInput(queryString.value);
   });
 
-  document.querySelector('.js-search-button')
-    .addEventListener('click', ()=>{
-      filterByInput(queryString.value);
-    })
+  document.querySelector(".js-search-button").addEventListener("click", () => {
+    filterByInput(queryString.value);
+  });
 });

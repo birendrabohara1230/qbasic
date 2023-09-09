@@ -61,6 +61,10 @@ body {
   padding: 15px 0px;
 }
 
+.header-links ul li button:hover{
+  font-size: 20px;
+}
+
 
 
 .main-content {
@@ -94,6 +98,7 @@ body {
 
 img {
   border-radius: 10px;
+  box-shadow: -5px 3px 23px -3px rgba(0,0,0,0.32);
 }
 
 
@@ -118,4 +123,8 @@ img {
   background-color: green;
   color: white;
   cursor: pointer;
+}
+
+b{
+  color: green;
 }
