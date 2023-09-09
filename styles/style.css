@@ -128,3 +128,16 @@ img {
 b{
   color: green;
 }
+
+.video-container {
+  max-width: 800px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow */
+  border-radius: 8px; /* Add rounded corners for a beautiful style */
+  overflow: hidden; /* Hide video overflow */
+}
+
+video {
+  width: 100%; /* Make the video responsive within the container */
+  height: auto; /* Maintain aspect ratio */
+}
