@@ -1,5 +1,6 @@
 import introductionToQbasic from "../Data/introductionToQbasic.js";
 import qbasicStatements from "../Data/qbasicStatements.js";
+import controlStatements from '../Data/controlStatments.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   let mainContentHTML = "";
@@ -33,8 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
       setHTML(introductionToQbasic);
     });
 
+
+
   document.querySelector(".qbasicStatement").addEventListener("click", () => {
     setHTML(qbasicStatements);
+  });
+
+
+  document.querySelector(".controlStatment").addEventListener("click", () => {
+    setHTML(controlStatements);
   });
 
   /*Search Functionality */
@@ -47,6 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     qbasicStatements.forEach((topic) => {
+      if (topic.qns.toLowerCase().includes(queryString.toLowerCase())) {
+        filterData.push(topic);
+      }
+    });
+
+    controlStatements.forEach((topic) => {
       if (topic.qns.toLowerCase().includes(queryString.toLowerCase())) {
         filterData.push(topic);
       }
