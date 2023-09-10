@@ -65,15 +65,25 @@ document.addEventListener("DOMContentLoaded", () => {
         filterData.push(topic);
       }
     });
-    setHTML(filterData);
+    if(filterData.length > 0){
+      setHTML(filterData);
+    }else{
+      filterData.push({
+        qns: "No Result Found",
+        ans: "Re-enter the valid topic",
+        exp: ""
+      });
+      setHTML(filterData);
+    }
   }
 
   const queryString = document.querySelector(".js-search");
-  queryString.addEventListener("keypress", () => {
-    filterByInput(queryString.value);
-  });
-
+    queryString.addEventListener("keypress", () => {
+      filterByInput(queryString.value);
+    });
+  
+  
   document.querySelector(".js-search-button").addEventListener("click", () => {
-    filterByInput(queryString.value);
+      filterByInput(queryString.value);
   });
 });
