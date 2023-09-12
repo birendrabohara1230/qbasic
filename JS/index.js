@@ -1,10 +1,11 @@
 import introductionToQbasic from "../Data/introductionToQbasic.js";
 import qbasicStatements from "../Data/qbasicStatements.js";
-import controlStatements from '../Data/controlStatments.js';
+import controlStatements from "../Data/controlStatments.js";
+import questionswithsolution from "../Data/questionswithsolution.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  let mainContentHTML = "";
   const mainContentDiv = document.querySelector(".main-content");
+  let mainContentHTML = "";
   function setHTML(data) {
     data.forEach((element) => {
       mainContentHTML += `
@@ -34,12 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
       setHTML(introductionToQbasic);
     });
 
-
-
   document.querySelector(".qbasicStatement").addEventListener("click", () => {
     setHTML(qbasicStatements);
   });
-
 
   document.querySelector(".controlStatment").addEventListener("click", () => {
     setHTML(controlStatements);
@@ -65,25 +63,69 @@ document.addEventListener("DOMContentLoaded", () => {
         filterData.push(topic);
       }
     });
-    if(filterData.length > 0){
+    if (filterData.length > 0) {
       setHTML(filterData);
-    }else{
+    } else {
       filterData.push({
         qns: "No Result Found",
         ans: "Re-enter the valid topic",
-        exp: ""
+        exp: "",
       });
       setHTML(filterData);
     }
   }
 
   const queryString = document.querySelector(".js-search");
-    queryString.addEventListener("keypress", () => {
-      filterByInput(queryString.value);
-    });
-  
-  
-  document.querySelector(".js-search-button").addEventListener("click", () => {
-      filterByInput(queryString.value);
+  queryString.addEventListener("keypress", () => {
+    filterByInput(queryString.value);
   });
+
+  document.querySelector(".js-search-button").addEventListener("click", () => {
+    filterByInput(queryString.value);
+  });
+
+  document
+    .querySelector(".questionswithsolution")
+    .addEventListener("click", () => {
+      let questionsWithSolutionHTML = "";
+      questionswithsolution.forEach((question) => {
+        questionsWithSolutionHTML += `
+    <div class="image-container">
+    <img src="${question.imgUrl}" alt="Image 1">
+    </div>
+      `;
+      });
+
+      mainContentDiv.innerHTML =  `<div class="image-gallery">${questionsWithSolutionHTML}</div>`;
+  
+
+      // Image Gallery
+      // Get references to the modal and modal image
+      const modal = document.getElementById("image-modal");
+      const modalImage = document.getElementById("modal-image");
+
+      // Get all image containers
+      const imageContainers = document.querySelectorAll(".image-container");
+
+      // Add click event listeners to open the modal
+      imageContainers.forEach((container) => {
+        container.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImage.src = container.querySelector("img").src;
+        });
+      });
+
+      // Close the modal when the close button is clicked
+      const closeButton = document.querySelector(".close");
+      closeButton.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+
+      // Close the modal when the user clicks outside the modal
+      window.addEventListener("click", (event) => {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    });
 });
