@@ -204,7 +204,7 @@ video {
       max-height: 90%;
   }
   #image-modal{
-    top: 100px;
+    top: 10px;
   }
   .close{
     display: none;
