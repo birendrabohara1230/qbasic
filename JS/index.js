@@ -63,6 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
         filterData.push(topic);
       }
     });
+
+  
+
+
     if (filterData.length > 0) {
       setHTML(filterData);
     } else {
@@ -80,52 +84,62 @@ document.addEventListener("DOMContentLoaded", () => {
     filterByInput(queryString.value);
   });
 
-  document.querySelector(".js-search-button").addEventListener("click", () => {
+  const searchButton = document.querySelector('.js-search-button');
+  searchButton.addEventListener("click", () => {
     filterByInput(queryString.value);
   });
 
   document
     .querySelector(".questionswithsolution")
     .addEventListener("click", () => {
-      let questionsWithSolutionHTML = "";
-      questionswithsolution.forEach((question) => {
-        questionsWithSolutionHTML += `
+      questionWithSolution(questionswithsolution);
+    });
+
+  function questionWithSolution(qnswithsolution) {
+    let questionsWithSolutionHTML = "";
+    qnswithsolution.forEach((question) => {
+      questionsWithSolutionHTML += `
     <div class="image-container">
     <img src="${question.imgUrl}" alt="Image 1">
     </div>
       `;
-      });
+    });
 
-      mainContentDiv.innerHTML =  `<div class="image-gallery">${questionsWithSolutionHTML}</div>`;
-  
+    mainContentDiv.innerHTML = `<div class="image-gallery">${questionsWithSolutionHTML}</div>`;
 
-      // Image Gallery
-      // Get references to the modal and modal image
-      const modal = document.getElementById("image-modal");
-      const modalImage = document.getElementById("modal-image");
+    // Image Gallery
+    // Get references to the modal and modal image
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
 
-      // Get all image containers
-      const imageContainers = document.querySelectorAll(".image-container");
+    // Get all image containers
+    const imageContainers = document.querySelectorAll(".image-container");
 
-      // Add click event listeners to open the modal
-      imageContainers.forEach((container) => {
-        container.addEventListener("click", () => {
-          modal.style.display = "block";
-          modalImage.src = container.querySelector("img").src;
-        });
-      });
-
-      // Close the modal when the close button is clicked
-      const closeButton = document.querySelector(".close");
-      closeButton.addEventListener("click", () => {
-        modal.style.display = "none";
-      });
-
-      // Close the modal when the user clicks outside the modal
-      window.addEventListener("click", (event) => {
-        if (event.target === modal) {
-          modal.style.display = "none";
-        }
+    // Add click event listeners to open the modal
+    imageContainers.forEach((container) => {
+      container.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImage.src = container.querySelector("img").src;
       });
     });
+
+    // Close the modal when the close button is clicked
+    const closeButton = document.querySelector(".close");
+    closeButton.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+
+    // Close the modal when the user clicks outside the modal
+    window.addEventListener("click", (event) => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+
+  /*Filter questions*/
+  function getQuestions(){
+    let filterData = [];
+    
+  }
 });
