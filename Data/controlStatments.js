@@ -28,6 +28,16 @@ const controlStatements = [
         qns: "if ... then Conditional Control Statement",
         ans: "This is a conditional statement which executes a block of code if the mentioned condition is true, else it will not execute that block of code.<br><a href='../images/ifthensyntax.png' target='_blank'><img src='../images/ifthensyntax.png' width='50%'></a>",
         exp: "<a href='../images/ifthen1.png' target='_blank'><img src='../images/ifthen1.png' width='50%'></a><a href='../images/outputcontrolstatement4.png' target='_blank'><img src='../images/outputcontrolstatement4.png' width='50%'></a><br>In the above example condition is false because of that the flow of program transfered to the instruction below the <b>end if</b> statement and below it end is there, which end the program. Because of that we will see output blank.<br><b>Example 1</b><br><a href='../images/ifthenexample1.png' target='_blank'><img src='../images/ifthenexample1.png' width='50%'></a><a href='../images/outputifthenexample1.png' target='_blank'><img src='../images/outputifthenexample1.png' width='50%'></a><br><a href='../images/ifthenexample1explain.png' target='_blank'><img src='../images/ifthenexample1explain.png' width='50%'></a>"
+    },
+    {
+        qns: "if ... else control statement",
+        ans: "This is similar to <b>if ... then</b> control statement only difference is <b> else </b> part is added.<br><a href='../images/ifelsesyntax.png' target='_blank'><img src='../images/ifelsesyntax.png' width='50%'></a>.",
+        exp: "<b>Example</b><br><a href='../images/evenorodd.png' target='_blank'><img src='../images/evenorodd.png' width='50%'></a><br><a href='../images/evenoroddoutput.png' target='_blank'><img src='../images/evenoroddoutput.png' width='50%'></a>"
+    },
+    {
+        qns: "if ... elseif  control statement",
+        ans: "If you want to check multiple condition, then there is one option called <b>if ... elseif </b> control statement.<br><a href='../images/elseifsyntax.png' target='_blank'><img src='../images/elseifsyntax.png' width='50%'></a><br>In the above syntax, there are multiple conditions, at first, top or first condition will get checked if it is true, then instruction(s) below that condition will get executed. If the first condition is false, next condition will get checked and this process repeated until last condition. If none of the above condition is true, then by default <b>else</b> part will get executed.",
+        exp: "<b>Example </b><br><a href='../images/positiveornegativeorzero.png' target='_blank'><img src='../images/positiveornegativeorzero.png' width='50%'></a>"
     }
 ];
 
