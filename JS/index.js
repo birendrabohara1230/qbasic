@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     mainContentDiv.innerHTML = `<div class="image-gallery">${questionsWithSolutionHTML}</div>`;
-
+   
     // Image Gallery
     // Get references to the modal and modal image
     const modal = document.getElementById("image-modal");

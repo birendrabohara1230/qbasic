@@ -37,7 +37,21 @@ const controlStatements = [
     {
         qns: "if ... elseif  control statement",
         ans: "If you want to check multiple condition, then there is one option called <b>if ... elseif </b> control statement.<br><a href='../images/elseifsyntax.png' target='_blank'><img src='../images/elseifsyntax.png' width='50%'></a><br>In the above syntax, there are multiple conditions, at first, top or first condition will get checked if it is true, then instruction(s) below that condition will get executed. If the first condition is false, next condition will get checked and this process repeated until last condition. If none of the above condition is true, then by default <b>else</b> part will get executed.",
-        exp: "<b>Example </b><br><a href='../images/positiveornegativeorzero.png' target='_blank'><img src='../images/positiveornegativeorzero.png' width='50%'></a>"
+        exp: "<b>Example </b><br><a href='../images/positiveornegativeorzero.png' target='_blank'><img src='../images/positiveornegativeorzero.png' width='50%'></a><br><a href='../images/zeroevenodd.png' target='_blank'><img src='../images/zeroevenodd.png' width='50%'></a>"
+    },
+    {
+        qns: "Switch control statement",
+        ans: "It is similar to <b>elseif</b> control statement, only difference is in elseif we check conditions but in <b>switch</b> statement we do not check conditions.<br><a href='../images/switchsyntax.png' target='_blank'><img src='../images/switchsyntax.png' width='50%'></a>",
+        exp: "<b>Example</b><br><a href='../images/switchexample1.png' target='_blank'><img src='../images/switchexample1.png' width='50%'></a><br>In the above example,<br>We are giving input <b> 10 and 2 </b>, where 10 goes inside of x and 2 goes inside of y.<br>After that options will be displayed, then we are asking for the input for choice and we are storing choice into variable <b>c</b>. In our example we are entering 2 as choice. And that value matched with second case, then it will perform subtraction."
+    },
+    {
+        qns: "Looping Control statement",
+        ans: "Looping means executing block of code for certain number of times as per requirement. Block of code means collection of instructions.",
+        exp: "Types of looping control statement <br> a) For loop <br> b) while loop <br> c) do while loop"
+    },
+    {
+        qns: "For loop ",
+        ans: "This is the most commonly used loop while writing programs.<br><a href='../images/forsyntax.png' target='_blank'><img src='../images/forsyntax.png' width='50%'></a>"
     }
 ];
 

@@ -19,6 +19,14 @@ const questionswithsolution = [
         category: "positiveornegativeorzero",
         imgUrl: "../images/positiveornegativeorzerosub.png"
     },
+    {
+        category: "zeroevenodd",
+        imgUrl: "../images/zeroevenodd.png"
+    },
+    {
+        category: "switch",
+        imgUrl: "../images/switchexample1.png"
+    },
 ];
 
 export default questionswithsolution;
