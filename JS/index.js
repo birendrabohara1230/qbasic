@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mainContentDiv.innerHTML = mainContentHTML;
     mainContentHTML = "";
   }
-  setHTML(modularProgramming);
+  setHTML(introductionToQbasic);
 
   document
     .querySelector(".introductionToQbasic")
