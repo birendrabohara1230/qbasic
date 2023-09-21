@@ -27,6 +27,10 @@ const questionswithsolution = [
         category: "switch",
         imgUrl: "../images/switchexample1.png"
     },
+    {
+        category: "looping",
+        imgUrl: "../images/sumofnumberhaving3digits.png"
+    },
 ];
 
 export default questionswithsolution;
