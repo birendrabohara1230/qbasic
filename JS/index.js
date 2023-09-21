@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mainContentDiv.innerHTML = mainContentHTML;
     mainContentHTML = "";
   }
-  setHTML(introductionToQbasic);
+  setHTML(modularProgramming);
 
   document
     .querySelector(".introductionToQbasic")
@@ -36,20 +36,26 @@ document.addEventListener("DOMContentLoaded", () => {
       setHTML(introductionToQbasic);
     });
 
-  document.querySelector(".qbasicStatement")
-  .addEventListener("click", () => {
+  document.querySelector(".qbasicStatement").addEventListener("click", () => {
     setHTML(qbasicStatements);
   });
 
-  document.querySelector(".controlStatment")
-  .addEventListener("click", () => {
+  document.querySelector(".controlStatment").addEventListener("click", () => {
     setHTML(controlStatements);
   });
 
-  document.querySelector(".modularProgramming")
-  .addEventListener("click", () => {
-    setHTML(modularProgramming);
-  });
+  document
+    .querySelector(".modularProgramming")
+    .addEventListener("click", () => {
+      setHTML(modularProgramming);
+    });
+
+  document
+    .querySelector(".questionswithsolution")
+    .addEventListener("click", () => {
+      questionWithSolution(questionswithsolution);
+    });
+
 
   /*Search Functionality */
   function filterByInput(queryString) {
@@ -72,8 +78,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-  
-
+    modularProgramming.forEach((topic) => {
+      if (topic.qns.toLowerCase().includes(queryString.toLowerCase())) {
+        filterData.push(topic);
+      }
+    });
 
     if (filterData.length > 0) {
       setHTML(filterData);
@@ -92,16 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
     filterByInput(queryString.value);
   });
 
-  const searchButton = document.querySelector('.js-search-button');
+  const searchButton = document.querySelector(".js-search-button");
   searchButton.addEventListener("click", () => {
     filterByInput(queryString.value);
   });
-
-  document
-    .querySelector(".questionswithsolution")
-    .addEventListener("click", () => {
-      questionWithSolution(questionswithsolution);
-    });
 
   function questionWithSolution(qnswithsolution) {
     let questionsWithSolutionHTML = "";
@@ -114,7 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     mainContentDiv.innerHTML = `<div class="image-gallery">${questionsWithSolutionHTML}</div>`;
-   
+
+
+
     // Image Gallery
     // Get references to the modal and modal image
     const modal = document.getElementById("image-modal");
@@ -146,8 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /*Filter questions*/
-  function getQuestions(){
+  function getQuestions() {
     let filterData = [];
-    
   }
 });
