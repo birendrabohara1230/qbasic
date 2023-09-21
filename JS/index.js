@@ -2,6 +2,7 @@ import introductionToQbasic from "../Data/introductionToQbasic.js";
 import qbasicStatements from "../Data/qbasicStatements.js";
 import controlStatements from "../Data/controlStatments.js";
 import questionswithsolution from "../Data/questionswithsolution.js";
+import modularProgramming from "../Data/modularProgramming.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const mainContentDiv = document.querySelector(".main-content");
@@ -35,12 +36,19 @@ document.addEventListener("DOMContentLoaded", () => {
       setHTML(introductionToQbasic);
     });
 
-  document.querySelector(".qbasicStatement").addEventListener("click", () => {
+  document.querySelector(".qbasicStatement")
+  .addEventListener("click", () => {
     setHTML(qbasicStatements);
   });
 
-  document.querySelector(".controlStatment").addEventListener("click", () => {
+  document.querySelector(".controlStatment")
+  .addEventListener("click", () => {
     setHTML(controlStatements);
+  });
+
+  document.querySelector(".modularProgramming")
+  .addEventListener("click", () => {
+    setHTML(modularProgramming);
   });
 
   /*Search Functionality */

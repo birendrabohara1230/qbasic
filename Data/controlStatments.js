@@ -51,7 +51,8 @@ const controlStatements = [
     },
     {
         qns: "For loop ",
-        ans: "This is the most commonly used loop while writing programs.<br><a href='../images/forsyntax.png' target='_blank'><img src='../images/forsyntax.png' width='50%'></a>"
+        ans: "This is the most commonly used loop while writing programs.<br><a href='../images/forsyntax.png' target='_blank'><img src='../images/forsyntax.png' width='50%'></a>",
+        exp: "<b>How it works. Let's take one example</b><br><a href='../images/forloop1.png' target='_blank'><img src='../images/forloop1.png' width='80%'></a><br><b>Explanation</b><br><a href='../imaes/forloop1explain.png' target='_blank'><img src='../images/forloop1explain.png' width='80%'></a>"
     }
 ];
 
