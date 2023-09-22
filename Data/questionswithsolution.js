@@ -31,6 +31,10 @@ const questionswithsolution = [
         category: "looping",
         imgUrl: "../images/sumofnumberhaving3digits.png"
     },
+    {
+        category: "output",
+        imgUrl: "../images/marksheetoutputwithcolor.png"
+    },
 ];
 
 export default questionswithsolution;

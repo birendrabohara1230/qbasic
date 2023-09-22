@@ -56,6 +56,12 @@ document.addEventListener("DOMContentLoaded", () => {
       questionWithSolution(questionswithsolution);
     });
 
+  document
+    .querySelector(".pdf")
+    .addEventListener("click", () => {
+      mainContentDiv.innerHTML = '<iframe src="../pdf/qbasicprogram.pdf" frameborder="0"></iframe>';
+    });
+
 
   /*Search Functionality */
   function filterByInput(queryString) {
