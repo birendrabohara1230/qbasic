@@ -35,6 +35,10 @@ const questionswithsolution = [
         category: "output",
         imgUrl: "../images/marksheetoutputwithcolor.png"
     },
+    {
+        category: "flowchart",
+        imgUrl: "../images/flowchartoffactorial.png"
+    },
 ];
 
 export default questionswithsolution;
