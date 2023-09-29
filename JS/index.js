@@ -3,6 +3,7 @@ import qbasicStatements from "../Data/qbasicStatements.js";
 import controlStatements from "../Data/controlStatments.js";
 import questionswithsolution from "../Data/questionswithsolution.js";
 import modularProgramming from "../Data/modularProgramming.js";
+import questionAnswer from "../Data/questionAnswer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const mainContentDiv = document.querySelector(".main-content");
@@ -50,18 +51,20 @@ document.addEventListener("DOMContentLoaded", () => {
       setHTML(modularProgramming);
     });
 
+  document.querySelector(".seeModelSet").addEventListener("click", () => {
+    setHTML(questionAnswer);
+  });
+
   document
     .querySelector(".questionswithsolution")
     .addEventListener("click", () => {
       questionWithSolution(questionswithsolution);
     });
 
-  document
-    .querySelector(".pdf")
-    .addEventListener("click", () => {
-      mainContentDiv.innerHTML = '<iframe src="../pdf/qbasicprogram.pdf" frameborder="0"></iframe>';
-    });
-
+  document.querySelector(".pdf").addEventListener("click", () => {
+    mainContentDiv.innerHTML =
+      '<iframe src="../pdf/qbasicprogram.pdf" frameborder="0"></iframe>';
+  });
 
   /*Search Functionality */
   function filterByInput(queryString) {
@@ -123,8 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     mainContentDiv.innerHTML = `<div class="image-gallery">${questionsWithSolutionHTML}</div>`;
-
-
 
     // Image Gallery
     // Get references to the modal and modal image
