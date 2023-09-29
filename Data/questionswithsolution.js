@@ -39,6 +39,10 @@ const questionswithsolution = [
         category: "flowchart",
         imgUrl: "../images/flowchartoffactorial.png"
     },
+    {
+        category: "flowchart",
+        imgUrl: "../images/flowchartofsumofdigitsofnumber.png"
+    },
 ];
 
 export default questionswithsolution;
