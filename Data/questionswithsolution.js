@@ -24,11 +24,11 @@ const questionswithsolution = [
         imgUrl: "../images/zeroevenodd.png"
     },
     {
-        category: "switch",
+        category: "switch example",
         imgUrl: "../images/switchexample1.png"
     },
     {
-        category: "looping",
+        category: "Sum of three number having three or 3 digits",
         imgUrl: "../images/sumofnumberhaving3digits.png"
     },
     {
@@ -36,12 +36,20 @@ const questionswithsolution = [
         imgUrl: "../images/marksheetoutputwithcolor.png"
     },
     {
-        category: "flowchart",
+        category: "Factorial of Number",
         imgUrl: "../images/flowchartoffactorial.png"
     },
     {
         category: "flowchart",
         imgUrl: "../images/flowchartofsumofdigitsofnumber.png"
+    },
+    {
+        category: "leapyear",
+        imgUrl: "../images/leapyear.png"
+    },
+    {
+        category: "difference between while and dowhile",
+        imgUrl: "../images/diffwhileanddowhile.png"
     },
 ];
 

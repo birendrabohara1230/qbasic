@@ -1,7 +1,7 @@
 const introductionToQbasic = [
     {
         qns: "Introduction to Programming",
-        ans: "In simple language, programming is the way of telling computer what to do and how to do. To tell computer what to do and how to do we have to use some language called programming language. Lots of programming lanauge are there such as C, C++, Qbasic, Python, Java, C#, etc but the job of each and every programming language is to tell computer what to do and how to do.",
+        ans: "In simple language, programming is the way of telling computer what to do and how to do. To tell computer what to do and how to do we have to use some language called programming language. Lots of programming langauge are there such as C, C++, Qbasic, Python, Java, C#, etc but the job of each and every programming language is to tell computer what to do and how to do.",
         exp: "<b>Note:-</b><br>All the programming language have almost same concept, so if you know Qbasic properly, then <b>congratulate yourself</b> you know about all programming language present in this world. As I already told you all the programming language shares almost same concept, but the only difference is, the way of writing instructions.<br>It is similar to if you know how to ride a bicycle, then definitely you know how to ride all bicycles present in this world."
     },
     {
