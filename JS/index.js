@@ -4,6 +4,7 @@ import controlStatements from "../Data/controlStatments.js";
 import questionswithsolution from "../Data/questionswithsolution.js";
 import modularProgramming from "../Data/modularProgramming.js";
 import questionAnswer from "../Data/questionAnswer.js";
+import arrayInQbasic from "../Data/arrayInQbasic.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   const mainContentDiv = document.querySelector(".main-content");
@@ -53,6 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelector(".seeModelSet").addEventListener("click", () => {
     setHTML(questionAnswer);
+  });
+
+  document.querySelector(".arrayInQbasic").addEventListener("click", () => {
+    setHTML(arrayInQbasic);
   });
 
   document
