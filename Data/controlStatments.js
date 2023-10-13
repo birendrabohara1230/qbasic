@@ -53,6 +53,14 @@ const controlStatements = [
         qns: "For loop ",
         ans: "This is the most commonly used loop while writing programs.<br><a href='../images/forsyntax.png' target='_blank'><img src='../images/forsyntax.png' width='50%'></a>",
         exp: "<b>How it works. Let's take one example</b><br><a href='../images/forloop1.png' target='_blank'><img src='../images/forloop1.png' width='80%'></a><br><b>Explanation</b><br><a href='../imaes/forloop1explain.png' target='_blank'><img src='../images/forloop1explain.png' width='80%'></a>"
+    },
+    {
+        qns: "Important Points About For Loop",
+        ans: "<ol><li>Before using <b>for</b>, first we have to know how many times we want to execute loop.</li><li>It is a entry controlled loop, it means that first it checks the condition before executing its body i.e. for loop body. If the condition it true then only it executes its body else the flow of program goes below next statement/instruction.</li></ol>"
+    },
+    {
+        qns: "While loop",
+        ans: "<a href='../images/whileloopsyntax.png' target='_blank'><img src='../images/whileloopsyntax.png' width='80%'></a>"
     }
 ];
 
