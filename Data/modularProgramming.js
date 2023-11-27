@@ -12,6 +12,10 @@ const modularProgramming = [
     {
         qns: "Function Procedure",
         ans: "Function procedure are same as of <b>Sub Procedure </b>, but only difference is when we call function procedure always it returns value and syntax for calling function procedure is also different.<br><a href='../images/functionproceduresyntax.png' target='_blank'><img src='../images/functionproceduresyntax.png' width='70%'></a>"
+    },
+    {
+        qns: "Write a program to calculate the area of rectangle using function?",
+        ans: "<a href='../images/arearectanglefunction.png' target='_blank'><img src='../images/arearectanglefunction.png' width='50%'></a>"
     }
 ];
 

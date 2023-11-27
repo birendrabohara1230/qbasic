@@ -30,6 +30,29 @@ document.addEventListener("DOMContentLoaded", () => {
     mainContentDiv.innerHTML = mainContentHTML;
     mainContentHTML = "";
   }
+
+  function setHTMLModelSet(data) {
+    data.forEach((element) => {
+      mainContentHTML += `
+        <div class="question-topic">
+            <h4 style="color: green">${element.qns}</h4>
+        </div>
+        <div class="answer">
+          <p class="pc-view">${element.ans}</p>
+        </div>
+        ${
+          element.exp
+            ? `<div class="explain">
+        <p class="pc-view">${element.exp}</p>
+    </div>`
+            : ""
+        }
+        `;
+    });
+    mainContentDiv.innerHTML = mainContentHTML;
+    mainContentHTML = "";
+  }
+
   setHTML(introductionToQbasic);
 
   document
@@ -53,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
   document.querySelector(".seeModelSet").addEventListener("click", () => {
-    setHTML(questionAnswer);
+    setHTMLModelSet(questionAnswer);
   });
 
   document.querySelector(".arrayInQbasic").addEventListener("click", () => {
