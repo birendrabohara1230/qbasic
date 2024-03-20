@@ -1,5 +1,10 @@
 const questionAnswer = [
     {
+        qns: "<h2> Credit goes to Miss Suhana Khadka </h2>",
+        ans:"",
+        exp:""
+    },
+    {
         qns: "What is computer network?Enlist any two advantage of it.",
         ans:"It is a collection of two or more computers which are connected to eachother inorder to exchange data/information and resources(hardware).",
         exp:""
