@@ -406,7 +406,7 @@ const questionAnswer = [
     },
     {
         qns:"Define forms.",
-        ans:"Form is a graphical interface that allows us to muniplate the content of a table or a database.",
+        ans:"Form is a graphical interface that allows us to munipulate the content of a table or a database.",
         exp:""
     },
 ]
