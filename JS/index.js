@@ -32,10 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function setHTMLModelSet(data) {
-    data.forEach((element) => {
+    data.forEach((element, index) => {
       mainContentHTML += `
         <div class="question-topic">
-            <h4 style="color: green">${element.qns}</h4>
+            ${index + ") "}<h4 style="color: green">${element.qns}</h4>
         </div>
         <div class="answer">
           <p class="pc-view">${element.ans}</p>
