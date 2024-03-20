@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     data.forEach((element, index) => {
       mainContentHTML += `
         <div class="question-topic">
-            ${index + ") "}<h4 style="color: green">${element.qns}</h4>
+            <h4 style="color: green">${(index + 1) + ") "}${element.qns}</h4>
         </div>
         <div class="answer">
           <p class="pc-view">${element.ans}</p>
