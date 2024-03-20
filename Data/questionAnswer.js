@@ -1,7 +1,7 @@
 const questionAnswer = [
     {
-        qns: "<h2> Credit goes to Miss Suhana Khadka </h2>",
-        ans:"",
+        qns: "<h2> Credit goes to <b>Miss Suhana Khadka</b>  </h2>",
+        ans:"<h3>SEE Batch (2080)</h3>",
         exp:""
     },
     {
